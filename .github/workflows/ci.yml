@@ -13,5 +13,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - run: echo "Hello World"
-        - run: echo "Hello World 2"
-        - run: echo "Hello World 3"
+
+    test-job:
+      runs-on: ubuntu-latest
+      steps:
+        -run: echo "test job"
+
+    deploy-job:
+      runs-on: ubuntu-latest
+      steps:
+        -run: echo "deploy job to production server"
